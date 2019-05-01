@@ -1,0 +1,140 @@
+Microsoft Windows [versão 10.0.16299.192]
+(c) 2017 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\opet>python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+C:\Users\opet>cd Documents
+
+C:\Users\opet\Documents>cd ambiente
+O sistema não pode encontrar o caminho especificado.
+
+C:\Users\opet\Documents>ambiente
+'ambiente' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\opet\Documents>pip install virtualenv
+Collecting virtualenv
+  Downloading https://files.pythonhosted.org/packages/4f/ba/6f9315180501d5ac3e707f19fcb1764c26cc6a9a31af05778f7c2383eadb/virtualenv-16.5.0-py2.py3-none-any.whl (2.0MB)
+    100% |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 2.0MB 3.3MB/s
+Installing collected packages: virtualenv
+Successfully installed virtualenv-16.5.0
+You are using pip version 19.0.3, however version 19.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\opet\Documents>virtualenv ambiente
+Using base prefix 'c:\\users\\opet\\appdata\\local\\programs\\python\\python37-32'
+New python executable in C:\Users\opet\Documents\ambiente\Scripts\python.exe
+Installing setuptools, pip, wheel...
+done.
+
+C:\Users\opet\Documents>cd ambiente
+
+C:\Users\opet\Documents\ambiente>cd Scripts
+
+C:\Users\opet\Documents\ambiente\Scripts>activate
+
+(ambiente) C:\Users\opet\Documents\ambiente\Scripts>cd..
+
+(ambiente) C:\Users\opet\Documents\ambiente>git clone https://github.com/devdcardoso/FlaskProject
+Cloning into 'FlaskProject'...
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (37/37), done.
+remote: Total 41 (delta 5), reused 34 (delta 2), pack-reused 0
+Unpacking objects: 100% (41/41), done.
+
+(ambiente) C:\Users\opet\Documents\ambiente>pip install flask
+Collecting flask
+  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 92kB 2.0MB/s
+Collecting click>=5.1 (from flask)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 81kB 5.5MB/s
+Collecting itsdangerous>=0.24 (from flask)
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Werkzeug>=0.14 (from flask)
+  Downloading https://files.pythonhosted.org/packages/18/79/84f02539cc181cdbf5ff5a41b9f52cae870b6f632767e43ba6ac70132e92/Werkzeug-0.15.2-py2.py3-none-any.whl (328kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 337kB 6.8MB/s
+Collecting Jinja2>=2.10 (from flask)
+  Downloading https://files.pythonhosted.org/packages/1d/e7/fd8b501e7a6dfe492a433deb7b9d833d39ca74916fa8bc63dd1a4947a671/Jinja2-2.10.1-py2.py3-none-any.whl (124kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 133kB 6.8MB/s
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->flask)
+  Downloading https://files.pythonhosted.org/packages/5b/d4/1deb3c5dc3714fb160c7e2116fc6dff36a063d9156a9328cce54ef35cc52/MarkupSafe-1.1.1-cp37-cp37m-win32.whl
+Installing collected packages: click, itsdangerous, Werkzeug, MarkupSafe, Jinja2, flask
+Successfully installed Jinja2-2.10.1 MarkupSafe-1.1.1 Werkzeug-0.15.2 click-7.0 flask-1.0.2 itsdangerous-1.1.0
+
+(ambiente) C:\Users\opet\Documents\ambiente>pip install pytest
+Collecting pytest
+  Downloading https://files.pythonhosted.org/packages/5d/c3/54f607bc9817fd284073ac68e99123f86616f431f9d29a855474b7cf00eb/pytest-4.4.1-py2.py3-none-any.whl (223kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 225kB 6.4MB/s
+Collecting pluggy>=0.9 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/84/e8/4ddac125b5a0e84ea6ffc93cfccf1e7ee1924e88f53c64e98227f0af2a5f/pluggy-0.9.0-py2.py3-none-any.whl
+Collecting more-itertools>=4.0.0; python_version > "2.7" (from pytest)
+  Downloading https://files.pythonhosted.org/packages/b3/73/64fb5922b745fc1daee8a2880d907d2a70d9c7bb71eea86fcb9445daab5e/more_itertools-7.0.0-py3-none-any.whl (53kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 61kB 4.1MB/s
+Collecting py>=1.5.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/76/bc/394ad449851729244a97857ee14d7cba61ddb268dce3db538ba2f2ba1f0f/py-1.8.0-py2.py3-none-any.whl (83kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 92kB 6.1MB/s
+Collecting colorama; sys_platform == "win32" (from pytest)
+  Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Collecting atomicwrites>=1.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/52/90/6155aa926f43f2b2a22b01be7241be3bfd1ceaf7d0b3267213e8127d41f4/atomicwrites-1.3.0-py2.py3-none-any.whl
+Collecting six>=1.10.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in c:\users\opet\documents\ambiente\lib\site-packages (from pytest) (41.0.1)
+Collecting attrs>=17.4.0 (from pytest)
+  Downloading https://files.pythonhosted.org/packages/23/96/d828354fa2dbdf216eaa7b7de0db692f12c234f7ef888cc14980ef40d1d2/attrs-19.1.0-py2.py3-none-any.whl
+Installing collected packages: pluggy, more-itertools, py, colorama, atomicwrites, six, attrs, pytest
+Successfully installed atomicwrites-1.3.0 attrs-19.1.0 colorama-0.4.1 more-itertools-7.0.0 pluggy-0.9.0 py-1.8.0 pytest-4.4.1 six-1.12.0
+
+(ambiente) C:\Users\opet\Documents\ambiente>hello.py
+'hello.py' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+(ambiente) C:\Users\opet\Documents\ambiente>cd C:\Users\opet\Documents\ambiente\FlaskProject\primeiro_projeto_flask
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\primeiro_projeto_flask>set FLASK_APP=hello.py
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\primeiro_projeto_flask>set FLASK_ENV=development
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\primeiro_projeto_flask>cd C:\Users\opet\Documents\ambiente\FlaskProject\projeto-exemplo-flask
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\projeto-exemplo-flask>set FLASK_APP=flaskr
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\projeto-exemplo-flask>set FLASK_ENV=development
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\projeto-exemplo-flask>flask init-db
+DB Initialized.
+
+(ambiente) C:\Users\opet\Documents\ambiente\FlaskProject\projeto-exemplo-flask>flask run
+ * Serving Flask app "flaskr" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 123-355-551
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [30/Apr/2019 19:31:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 19:31:18] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 19:31:18] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2019 20:01:09] "GET /hello HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:01:23] "GET /serie HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2019 20:01:35] "GET /serie/got HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2019 20:01:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:03:48] "GET /hello/maria HTTP/1.1" 404 -
+127.0.0.1 - - [30/Apr/2019 20:17:38] "GET /create HTTP/1.1" 302 -
+127.0.0.1 - - [30/Apr/2019 20:17:38] "GET /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:18:28] "POST /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:18:44] "POST /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:18:58] "POST /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:03] "GET /auth/register HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:04] "GET /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:05] "GET /auth/register HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:37] "GET /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:42] "POST /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:53] "POST /auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:55] "GET /auth/register HTTP/1.1" 200 -
+127.0.0.1 - - [30/Apr/2019 20:19:57] "GET /auth/login HTTP/1.1" 200 -
